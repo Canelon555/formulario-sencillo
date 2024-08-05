@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Html Basico</title>
+</head>
+<body>
+  <div id="title-container">
+    <h1 id="title">Formulario de registro</h1>
+    <h2 id="subtitle">Crear Usuario</h2>
+  </div>
+  <div id="form-container">
+    <form id="form">
+        <!--Usuario-->
+        <div class="input-container">
+            <input type="text" id="username" class="form-input" placeholder="Nombre y Apellido">
+        </div>
+        <!--Password-->
+        <div class="input-container">
+            <input type="password" id="userpassword" class="form-input" placeholder="Contraseña">
+        </div>
+        <!--Password match-->
+        <div class="input-container">
+            <input type="password" id="password-match" class="form-input" placeholder="Confirmar Contraseña">
+        </div>
+        <!--E-mail-->
+        <div class="input-container">
+            <input type="email" id="inputEmail" class="form-input" placeholder="Correo Electronico">
+        </div>
+        <!--Numero-->
+        <div class="input-container">
+            <input type="tel" id="usernumber" class="form-input" placeholder="Numero Telefonico">
+        </div>
+        <div class="input-radio">
+            <p>Sexo:</p>
+            <!--Botones de radio-->
+            <label for="Femenino">
+                <input type="radio" value="Femenino" name="Femenino-Masculino" checked>Femenino
+            </label>
+            <br>
+            <label for="Masculino">
+                <input type="radio" value="Masculino" name="Femenino-Masculino">Masculino
+            </label>
+        </div>
+        <div class="input-container">
+            <p>Ingresa Tus Palabras de Seguridad</p>
+            <textarea id="comentarios" name="Palabras de Seguridad" rows="2" cols="10"></textarea>
+        </div>
+        <div class="select-container">
+            <p>Elige el Servidor</p>
+            <select name="Servidor" id="servidor">
+                <option value="Runterra">Runterra</option>
+                <option value="Galacia">Galacia</option>
+                <option value="Pangea">Pangea</option>
+                <option value="Jupiter">Jupiter</option>
+            </select>
+        </div>
+        <div id="btn-form">
+            <button id="form-button">Registrar</button>
+        </div>
+    </form>
+  </div>
+</body>
+</html>
